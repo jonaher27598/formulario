@@ -5,12 +5,11 @@ import java.util.List;
 import org.hibernate.Criteria;
 import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Restrictions;
+import org.springframework.stereotype.Repository;
 
 import com.hernandez.hibernate.model.Materia;
-import com.websystique.springmvc.dao.AbstractDao;
-import com.websystique.springmvc.dao.UserProfileDao;
-import com.websystique.springmvc.model.UserProfile;
 
+@Repository("MateriaDao")
 public class MateriaDaoImpl extends AbstractDao<Integer, Materia>implements MateriaDao {
 	public Materia findById(int id) {
 		return getByKey(id);

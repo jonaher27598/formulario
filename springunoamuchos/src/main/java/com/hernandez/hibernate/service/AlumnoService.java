@@ -1,13 +1,15 @@
-package com.hernandez.hibernate.dao;
+package com.hernandez.hibernate.service;
 
 import java.util.List;
 
 import com.hernandez.hibernate.model.Alumno;
 
-public interface AlumnoDao {
+public interface AlumnoService {
+
 	Alumno findById(int id);
 
-	void save(Alumno alum);
+	void saveUser(Alumno alum);
 
 	List<Alumno> findAllUsers();
+
 }
